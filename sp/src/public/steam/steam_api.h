@@ -548,16 +548,16 @@ inline bool CSteamAPIContext::Init()
 		return false;
 	}
 
-	m_pSteamMusicRemote = SteamClient()->GetISteamMusicRemote( hSteamUser, hSteamPipe, STEAMMUSICREMOTE_INTERFACE_VERSION );
+//	m_pSteamMusicRemote = SteamClient()->GetISteamMusicRemote( hSteamUser, hSteamPipe, STEAMMUSICREMOTE_INTERFACE_VERSION );
 	if ( !m_pSteamMusicRemote )
 	{
-		return false;
+//		return false;
 	}
 
-	m_pSteamHTMLSurface = SteamClient()->GetISteamHTMLSurface( hSteamUser, hSteamPipe, STEAMHTMLSURFACE_INTERFACE_VERSION );
+//	m_pSteamHTMLSurface = SteamClient()->GetISteamHTMLSurface( hSteamUser, hSteamPipe, STEAMHTMLSURFACE_INTERFACE_VERSION );
 	if ( !m_pSteamHTMLSurface )
 	{
-		return false;
+//		return false;
 	}
 
 #ifdef _PS3
